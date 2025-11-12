@@ -14,17 +14,20 @@ public class TimeCalc {
         int newmin = (totalmin % 60);
         
         // make it a new time 
-        String newtime = (newhour + ":" + newmin);
-        
-        // print the new time
+         String hourStr;
         if (newhour < 10) {
-              System.out.println("0" + newtime);
-        } else if (newmin < 10) {
-              System.out.println(newhour + ":" + "0" + newmin);
-        }  else if (newmin == 0) {
-              System.out.println(newhour + ":" + "00");   
-        } else {
-            System.out.println(newtime); 
-        }     
-    }
-}
+           hourStr = "0" + newhour;
+         } else {
+             hourStr = "" + newhour;
+         }   
+
+         String minStr;
+         if (newmin < 10) {
+         minStr = "0" + newmin;
+         } else {
+         minStr = "" + newmin;
+         }
+         System.out.println(hourStr + ":" + minStr);
+
+         }
+       }

@@ -15,10 +15,11 @@ public class Cheers {
                 System.out.println( "Give me a " + ch + ": " + ch + "!");
            } 
         } 
-         System.out.println( "What does that spell?");
+         System.out.println("What does that spell?");
 
          for (int j = 0; j<n; j++){
-                System.out.println(  "name!!!");
+                System.out.println( name + "!!!" );
          }
            }
         }
+        
